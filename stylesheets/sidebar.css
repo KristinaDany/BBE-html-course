@@ -1,0 +1,41 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    padding: 30px;
+    margin: 50px 0 0 20px;
+
+    opacity: 0.5;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav ul {
+    margin: 0px;
+}
+
+nav li {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+nav>ul>li:first-child {
+    font-weight: bold;
+}
+
+nav ul ul li {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}
