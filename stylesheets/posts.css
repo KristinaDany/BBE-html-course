@@ -37,6 +37,10 @@ body.posts {
     color: rgba(0, 0, 0, 0.8);
 }
 
+.postTeaser h2:first-child {
+    margin-top: 0;
+}
+
 .postTeaser p {
     margin-top: 8px;
     font-weight: 400;
@@ -46,6 +50,29 @@ body.posts {
 }
 
 @media (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+    body.posts {
+        background: none;
+        display: flex;
+        justify-content: center;
+        padding: 120px 0;
+    }
+
+    body.posts>section {
+        width: calc(100% - 20px);
+    }
+
+
+    .postTeaser {
+        width: 100%;
+        padding: 0;
+
+        text-decoration: none;
+        background: #FFFFFF;
+        border-radius: 0px;
+        border: 0px;
+        box-shadow: none;
+    }
+
     .postTeaser figure {
         width: calc(100vw - 20px);
         height: calc(100vw - 20px);
