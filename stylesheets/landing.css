@@ -54,7 +54,6 @@ body.landing {
 
     width: 1157px;
     height: 662px;
-    background-image: url('../images/desktop-section-1-large.jpg');
 }
 
 #section-2 {
@@ -476,3 +475,28 @@ body.landing {
     }
 
 }
+
+@media (min-width: 1680px) {
+    #section-1-img {
+        background-image: url('../images/desktop-section-1-large.jpg');
+    }
+}
+
+@media (min-width: 1289px) and (max-width: 1679px) {
+    #section-1-img {
+        background-image: url('../images/desktop-section-1-medium.jpg');
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #section-1-img {
+        background-image: url('../images/desktop-section-1-small.jpg');
+    }
+}
+
+/* @media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    #section-1-img {
+        background-image: url('../images/desktop-section-1-large@2x.jpg');
+    }
+} */
